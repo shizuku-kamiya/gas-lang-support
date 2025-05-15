@@ -1,0 +1,25 @@
+{
+  "name": "gas-laug-support",
+  "displayName": "GNU Assembler Lauguage Support",
+  "description": "Syntax highlighting and language support for GNU Assembly (GAS)",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.100.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "gas",
+      "aliases": ["GAS", "gas"],
+      "extensions": [".s",".S",".asm"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "gas",
+      "scopeName": "source.gas",
+      "path": "./syntaxes/gas.tmLanguage.json"
+    }]
+  }
+}
